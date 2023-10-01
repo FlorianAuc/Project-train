@@ -1,0 +1,19 @@
+@import "./variable";
+footer {
+    text-align: center;
+    padding: 50px 0;
+    background: $footer;
+
+    span {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    a {
+        font-weight: 500;
+        transition: 0.5s;
+        &:hover {
+            color: orangered;
+        }
+    }
+}

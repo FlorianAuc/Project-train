@@ -1,0 +1,38 @@
+@import "./variable";
+
+header {
+    padding: 40px 40px;
+    background: $background;
+    color: $color-text;
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: $color-text;
+        padding: 8px 10px;
+
+        &:hover {
+            background: $button-effect;
+        }
+
+        &:focus {
+            background: $button-effect;
+        }
+    }
+}
+@media only screen and (max-width: 650px) {
+    header {
+        padding: 20px 20px;
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 300px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+}
