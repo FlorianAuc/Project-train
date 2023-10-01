@@ -2,25 +2,35 @@ header {
   padding: 40px 40px;
   background: #00574a;
   color: #fafafa;
-
+  img {
+    animation: anime-word 0.9s ease backwards;
+  }
+  h1 {
+    animation: anime-word 1s ease backwards;
+  }
   p {
     margin-bottom: 10px;
+    animation: anime-word 1.2s ease backwards;
   }
 
-  a {
-    color: #fafafa;
-    padding: 8px 10px;
-    transition: 0.5s;
+  nav {
+    animation: anime-word 1.5s ease backwards;
+    a {
+      color: #fafafa;
+      padding: 8px 10px;
+      transition: 0.8s;
 
-    &:hover {
-      background: #00b89c;
-    }
+      &:hover {
+        background: #00b89c;
+      }
 
-    &.active {
-      background: #00b89c;
+      &.active {
+        background: #00b89c;
+      }
     }
   }
 }
+
 @media only screen and (max-width: 650px) {
   header {
     padding: 20px 20px;

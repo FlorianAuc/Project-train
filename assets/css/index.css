@@ -7,23 +7,43 @@
   font-family: "Roboto", sans-serif;
 }
 
+@keyframes anime-word {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 header {
   padding: 40px 40px;
   background: #00574a;
   color: #fafafa;
 }
+header img {
+  animation: anime-word 0.9s ease backwards;
+}
+header h1 {
+  animation: anime-word 1s ease backwards;
+}
 header p {
   margin-bottom: 10px;
+  animation: anime-word 1.2s ease backwards;
 }
-header a {
+header nav {
+  animation: anime-word 1.5s ease backwards;
+}
+header nav a {
   color: #fafafa;
   padding: 8px 10px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
-header a:hover {
+header nav a:hover {
   background: #00b89c;
 }
-header a.active {
+header nav a.active {
   background: #00b89c;
 }
 
@@ -44,6 +64,7 @@ header a.active {
 .hero {
   width: 92%;
   margin: 0 auto;
+  animation: anime-word 0.5s ease backwards;
 }
 .hero .container {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -111,6 +132,7 @@ footer {
   text-align: center;
   padding: 50px 0;
   background: #ece9e9;
+  animation: anime-word 1.5s ease;
 }
 footer span {
   text-transform: uppercase;

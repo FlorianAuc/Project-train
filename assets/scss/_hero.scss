@@ -1,7 +1,7 @@
 .hero {
   width: 92%;
   margin: 0 auto;
-
+  animation: anime-word 0.5s ease backwards;
   .container {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
       rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -14,7 +14,6 @@
 
       &[open] {
         padding-bottom: 20px;
-
         summary {
           margin-bottom: 10px;
 
