@@ -9,6 +9,7 @@ const url7 = "../../assets/jsons/BE.NMBS.008885001.json";
 const url8 = "../../assets/jsons/BE.NMBS.008885704.json";
 const url9 = "../../assets/jsons/BE.NMBS.008892007.json";
 const container = document.querySelector(".container");
+const footer = document.querySelector("footer");
 
 function handlelockClick(event) {
   event.preventDefault();
@@ -190,4 +191,9 @@ const fetchStation = async () => {
   }
 };
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 350) {
+    footer.style.visibility = "visible";
+  }
+});
 fetchStation();

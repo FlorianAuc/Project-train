@@ -2,7 +2,8 @@ footer {
   text-align: center;
   padding: 50px 0;
   background: #ece9e9;
-  animation: anime-word 1.5s ease;
+  animation: anime-word 2s ease;
+  visibility: hidden;
   span {
     text-transform: uppercase;
     font-weight: 700;
