@@ -1,6 +1,20 @@
+const lock = document.querySelectorAll(".lock");
 const url = "../../assets/jsons/stations.json";
-
 const container = document.querySelector(".container");
+
+function handlelockClick(event) {
+  event.preventDefault();
+
+  lock.forEach((lock) => {
+    lock.classList.remove("active");
+  });
+
+  event.target.classList.add("active");
+}
+
+lock.forEach((lock) => {
+  lock.addEventListener("click", handlelockClick);
+});
 
 const fetchStation = async () => {
   let stationData = [];
@@ -8,6 +22,7 @@ const fetchStation = async () => {
   await fetch(url)
     .then((res) => res.json())
     .then((data) => (stationData = data.station));
+  stationData = stationData.slice(0, 20);
 
   for (let i = 0; i < 20 && i < stationData.length; i++) {
     const station = stationData[i];

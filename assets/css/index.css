@@ -18,11 +18,12 @@ header p {
 header a {
   color: #fafafa;
   padding: 8px 10px;
+  transition: 0.5s;
 }
 header a:hover {
   background: #00b89c;
 }
-header a:focus {
+header .active {
   background: #00b89c;
 }
 

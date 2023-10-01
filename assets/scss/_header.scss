@@ -12,14 +12,15 @@ header {
     a {
         color: $color-text;
         padding: 8px 10px;
+        transition: 0.5s;
 
         &:hover {
             background: $button-effect;
         }
+    }
 
-        &:focus {
-            background: $button-effect;
-        }
+    .active {
+        background: $button-effect;
     }
 }
 @media only screen and (max-width: 650px) {
