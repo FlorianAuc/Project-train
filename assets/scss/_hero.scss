@@ -1,80 +1,78 @@
-@import "./variable";
 .hero {
-    width: 92vw;
-    margin: 0 auto;
-    .container {
-        width: 100%;
-        box-shadow:
-            rgba(0, 0, 0, 0.15) 0px 15px 25px,
-            rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  width: 92%;
+  margin: 0 auto;
 
-        details {
-            transition: all 0.3s ease-out;
-            font-size: 14px;
-            border-radius: 10px;
-            border-bottom: 1px rgb(236, 236, 236) solid;
+  .container {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+      rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
-            &[open] {
-                padding-bottom: 20px;
+    details {
+      transition: all 0.3s ease-out;
+      font-size: 14px;
+      border-radius: 10px;
+      border-bottom: 1px rgb(236, 236, 236) solid;
 
-                summary {
-                    margin-bottom: 10px;
-
-                    &::before {
-                        transform: rotate(-135deg) translate(-30%, 0%);
-                    }
-                }
-            }
-
-            &:not(:first-child) {
-                margin-top: 10px;
-            }
-        }
+      &[open] {
+        padding-bottom: 20px;
 
         summary {
-            display: flex;
-            align-items: center;
-            padding: 10px 16px;
-            transition: 0.3s ease-out;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
+          margin-bottom: 10px;
 
-            &::before {
-                content: "";
-                display: block;
-                height: 6px;
-                flex: 0 0 6px;
-                margin-right: 20px;
-                border-right: 2px solid blue;
-                border-bottom: 2px solid blue;
-                transition: all 0.3s;
-                transform: rotate(45deg) translate(0, -30%);
-            }
+          &::before {
+            transform: rotate(-135deg) translate(-30%, 0%);
+          }
         }
+      }
 
-        .content {
-            table {
-                border-collapse: collapse;
-                th,
-                td {
-                    border-bottom: 2px rgb(236, 236, 236) solid;
-                    padding: 5px 50px;
-                }
-                tbody tr:nth-child(even) {
-                    background-color: rgba(223, 223, 223, 0.171);
-                }
-            }
-        }
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
     }
+
+    summary {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      transition: 0.3s ease-out;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 6px;
+        flex: 0 0 6px;
+        margin-right: 20px;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid blue;
+        transition: all 0.3s;
+        transform: rotate(45deg) translate(0, -30%);
+      }
+    }
+
+    .content {
+      table {
+        border-collapse: collapse;
+        th,
+        td {
+          border-bottom: 2px rgb(236, 236, 236) solid;
+          padding: 5px 50px;
+        }
+        tbody tr:nth-child(even) {
+          background-color: rgba(223, 223, 223, 0.171);
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 650px) {
-    .hero {
-        width: 100%;
-        .content table th,
-        .content table td {
-            padding: 5px 5px;
-        }
+  .hero {
+    width: 100%;
+    .container .content table th,
+    .container .content table td {
+      padding: 5px 20px;
     }
+  }
 }

@@ -42,6 +42,12 @@ const fetchStation = async () => {
             </thead>
 
             <tbody>
+            <tr>
+            <td data-title="Destination">${station.destination}</td>
+            <td data-title="Départ">${station.departure}</td>
+            <td data-title="Quai">${station.platform}</td>
+            <td data-title="Retard">${station.delay} min</td>
+          </tr>
               <tr>
                 <td data-title="Destination">Paris Nord</td>
                 <td data-title="Départ">15:50</td>

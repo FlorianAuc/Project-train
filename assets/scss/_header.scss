@@ -1,39 +1,37 @@
-@import "./variable";
-
 header {
-    padding: 40px 40px;
-    background: $background;
-    color: $color-text;
+  padding: 40px 40px;
+  background: #00574a;
+  color: #fafafa;
 
-    p {
-        margin-bottom: 10px;
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #fafafa;
+    padding: 8px 10px;
+    transition: 0.5s;
+
+    &:hover {
+      background: #00b89c;
     }
 
-    a {
-        color: $color-text;
-        padding: 8px 10px;
-        transition: 0.5s;
-
-        &:hover {
-            background: $button-effect;
-        }
+    &.active {
+      background: #00b89c;
     }
-
-    .active {
-        background: $button-effect;
-    }
+  }
 }
 @media only screen and (max-width: 650px) {
-    header {
-        padding: 20px 20px;
-        a {
-            display: block;
-            width: 100%;
-        }
+  header {
+    padding: 20px 20px;
+    a {
+      display: block;
+      width: 100%;
     }
+  }
 }
 @media only screen and (max-width: 300px) {
-    h1 {
-        font-size: 1.4rem;
-    }
+  h1 {
+    font-size: 1.4rem;
+  }
 }

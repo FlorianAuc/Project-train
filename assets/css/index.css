@@ -23,7 +23,7 @@ header a {
 header a:hover {
   background: #00b89c;
 }
-header .active {
+header a.active {
   background: #00b89c;
 }
 
@@ -42,11 +42,10 @@ header .active {
   }
 }
 .hero {
-  width: 92vw;
+  width: 92%;
   margin: 0 auto;
 }
 .hero .container {
-  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .hero .container details {
@@ -103,9 +102,9 @@ header .active {
   .hero {
     width: 100%;
   }
-  .hero .content table th,
-  .hero .content table td {
-    padding: 5px 5px;
+  .hero .container .content table th,
+  .hero .container .content table td {
+    padding: 5px 20px;
   }
 }
 footer {
@@ -115,7 +114,7 @@ footer {
 }
 footer span {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 footer a {
   font-weight: 500;
